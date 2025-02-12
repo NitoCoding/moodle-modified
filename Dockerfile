@@ -1,5 +1,5 @@
 # Gunakan image PHP dengan Apache sebagai base image
-FROM php:8.1-apache
+FROM php:8.2-apache
 
 # Set environment variables untuk Moodle
 ENV MOODLE_VERSION 3.11
