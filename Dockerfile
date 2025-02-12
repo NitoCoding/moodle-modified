@@ -28,8 +28,8 @@ RUN a2enmod rewrite
 COPY . /var/www/html/
 
 # Set permissions untuk direktori Moodle
-RUN chown -R www-data:www-data /var/www/html \
-    && chmod -R 755 /var/www/html
+RUN chown -R www-data:www-data /var/www \
+    && chmod -R 755 /var/www
 
 # Buat direktori untuk data Moodle
 RUN mkdir -p $MOODLE_DATA \
