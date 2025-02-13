@@ -4,7 +4,7 @@ ENV MOODLE_DATA=/var/moodledata \
     APACHE_DOCUMENT_ROOT=/var/www/html \
     DEBIAN_FRONTEND=noninteractive
 
-# Install dependencies dengan MySQLi dan ekstensi wajib Moodle
+# Install dependencies yang diperlukan Moodle
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libpng-dev \
     libjpeg-dev \
@@ -26,7 +26,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         opcache \
         soap \
         xsl \
-        xmlrpc \
         curl \
     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \
     && rm -rf /var/lib/apt/lists/*
