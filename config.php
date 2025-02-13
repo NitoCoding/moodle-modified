@@ -162,7 +162,7 @@ $CFG->dboptions = array(
 // If you need both intranet and Internet access please read
 // http://docs.moodle.org/en/masquerading
 
-$CFG->wwwroot   = 'http://example.com/moodle';
+$CFG->wwwroot   = 'http://moodletest-webapps-qszttx-2fddae-66-42-60-252.traefik.me';
 
 
 //=========================================================================
@@ -178,7 +178,7 @@ $CFG->wwwroot   = 'http://example.com/moodle';
 //
 // - On Windows systems you might specify something like 'c:\moodledata'
 
-$CFG->dataroot  = '/home/example/moodledata';
+$CFG->dataroot  = '/var/moodledata';
 
 // Whether the Moodle router is fully configured.
 //
