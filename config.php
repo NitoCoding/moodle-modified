@@ -43,7 +43,7 @@ $CFG->dblibrary = 'native';     // 'native' only at the moment
 $CFG->dbhost    = '66.42.60.252';  // eg 'localhost' or 'db.isp.com' or IP
 $CFG->dbname    = 'moodle';     // database name, eg moodle
 $CFG->dbuser    = 'moodle';   // your database username
-$CFG->dbpass    = 'password';   // your database password
+$CFG->dbpass    = 'nrn10ormjlgem8sx';   // your database password
 $CFG->prefix    = 'mdl_';       // prefix to use for all table names
 $CFG->dboptions = array(
     'dbpersist' => false,       // should persistent database connections be
@@ -56,7 +56,7 @@ $CFG->dboptions = array(
                                 //  (please note mysql is always using socket
                                 //  if dbhost is 'localhost' - if you need
                                 //  local port connection use '127.0.0.1')
-    'dbport'    => '',          // the TCP port number to use when connecting
+    'dbport'    => '3306',          // the TCP port number to use when connecting
                                 //  to the server. keep empty string for the
                                 //  default port
     'dbhandlesoptions' => false,// On PostgreSQL poolers like pgbouncer don't
